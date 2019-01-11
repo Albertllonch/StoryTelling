@@ -1,0 +1,28 @@
+li{list-style-type: none;}
+ul{list-style-type: none; padding-inline-start: 0px;}
+.container{
+    margin: 0;
+}
+.opening-title {
+    font-family: 'Canela Web';
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    letter-spacing: 6px;
+    color: white;
+    position: absolute;
+    left: 50%;
+}
+.opening-title .small {
+    font-size: 70px;
+    margin: 0;
+    line-height: 30px;
+    font-weight: 30;
+    letter-spacing: 5px;
+}
+.opening-title .big {
+    margin: 0px;
+    font-weight: 60;
+    font-size: 110px;
+    line-height: 1.5;
+}
