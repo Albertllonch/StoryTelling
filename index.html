@@ -1,4 +1,29 @@
-<!DOCTYPE HTML5>
+<!DOCTYPE html>
 <html>
-    
+    <head>
+        <title>VisualScrollyTelling: The KING</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <script src="js/parallax.js">
+        </script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="scene">
+                <li class="layer" data-depth="0.00"><img src="images/main_background.jpg" ></li>
+                <li class="layer" data-depth="0.60"><img src="images/jordan_solo.jpg" ></li>
+                <li class="layer" data-depth="0.40"><img src="images/lebron_solo.png" ></li>
+            </div>
+        
+        </div>
+      
+        <script src="js/parallax.js"></script>
+        <script>
+            var scene = document.getElementById('scene');
+            var parallaxInstance = new Parallax(scene);
+        </script>
+    </body>
+
 </html>
