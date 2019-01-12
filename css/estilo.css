@@ -1,7 +1,12 @@
 li{list-style-type: none;}
 ul{list-style-type: none; padding-inline-start: 0px;}
+
 .container{
     margin: 0;
+}
+.mainBG{
+    background-image: url('../images/main_background.jpg');
+    background-size: cover;
 }
 .opening-title {
     font-family: 'Canela Web';
