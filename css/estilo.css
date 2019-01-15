@@ -34,11 +34,27 @@ ul{list-style-type: none; padding-inline-start: 0px;}
     font-size: 110px;
     line-height: 1.5;
 }
-#mj1 img{
+li #mj1{
     margin-left: 70%;
-    height: 680px;
 }
-#lj1 img{
+li #lj1 {
     margin-left: 300%;
-    height: 680px;
-} 
+}
+.imgStart{
+    height: 200px;
+}
+
+.infoMJ{
+    width: 100%;
+    background-image: url('../images/jordan_utah.jpg');
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}
+.infoLJ{
+    width: 100%;
+    background-image: url('../images/lebron_fondo.png');
+    background-size: cover;
+    margin: 0 auto;
+    position: relative;
+}

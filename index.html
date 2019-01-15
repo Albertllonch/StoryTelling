@@ -10,9 +10,9 @@
     </head>
 
     <body>
-        <div class="row mainBG">
+        <div class="row section mainBG">
             <ul id="scene">
-                <li id="mj1" class="layer" data-depth="-0.50"><img src="images/jordan_solo.jpg" ></li>
+                <li id="mj1" class="layer" data-depth="-0.50"><img class="imgStart" src="images/jordan_solo.jpg" ></li>
                 <li id="lj1" class="layer" data-depth="-0.50"><img src="images/lebron_solo.png" ></li>
             </ul>
             <div class="opening-title">
@@ -21,12 +21,26 @@
                     <p class="big">King</p>
             </div>
         </div>
-      
+        
+        <div class="row section infoMJ">
+            <div class="contentMJ">
+                <p>michael</p>
+            </div>
+        </div>
+
+        <div class="row section infoLJ">
+            <div class="contentLJ">
+            </div>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script src="lib/parallax.js"></script>
         <script>
             var scene = document.getElementById('scene');
             var parallaxInstance = new Parallax(scene);
         </script>
+        <script src="js/controller-scrollify.js"></script>
+        <script src="js/jquery.scrollify.js"></script>
     </body>
 
 </html>
