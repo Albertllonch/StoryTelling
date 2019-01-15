@@ -41,7 +41,13 @@ li #lj1 {
     margin-left: 300%;
 }
 .imgStart{
-    height: 200px;
+    height: 600px;
+    margin-left: 70%;
+    margin-top: 20%;
+}
+#lj1 .imgStart {
+    margin-left:350%;
+
 }
 
 .infoMJ{
