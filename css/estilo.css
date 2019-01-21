@@ -1,6 +1,9 @@
 li{list-style-type: none;}
 ul{list-style-type: none; padding-inline-start: 0px;}
 
+body{	
+	background-color:black;
+}
 .container{
     margin: 0;
 }
@@ -10,7 +13,24 @@ ul{list-style-type: none; padding-inline-start: 0px;}
     background-size: cover;
     margin: 0 auto;
     position: relative;
+	animation: shake 0.5s;
+	animation-delay: 2s;
 }
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 .opening-title {
     font-family: 'Canela Web';
     text-align: center;
@@ -20,7 +40,36 @@ ul{list-style-type: none; padding-inline-start: 0px;}
     color: white;
     position: absolute;
     left: 40%;
+	
 }
+
+.opening-title p{
+	animation: fadeIn .8s ease-in both;
+}
+.opening-title p:nth-child(1){
+    animation-delay: 0s;
+}
+
+.opening-title p:nth-child(2){
+  animation-delay: .8s;
+}
+
+.opening-title p:nth-child(3){
+  animation: fadeIn .3s ease-in both;
+  animation-delay: 1.7s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	to {
+		opacity: 1;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
 .opening-title .small {
     font-size: 70px;
     margin: 0;
@@ -47,7 +96,76 @@ li #lj1 {
 }
 #lj1 .imgStart {
     margin-left:350%;
+}
 
+a:link,
+a:visited {
+  color:#FFF;
+  text-decoration:none;
+}
+
+
+
+.arrow-down{
+	width: 50px;
+	height: 50px;
+	transform: rotate(45deg);
+	margin-left:40%;
+}
+
+.arrow-down span{
+	position: absolute;
+	left:40%;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-right: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+	animation: arrow-down 1s linear infinite;
+}
+
+.arrow-down span:nth-child(1){
+	top: -30px;
+	left: -30px;
+  animation-delay: 0;
+}
+
+.arrow-down span:nth-child(2){
+	top: -15px;
+	left: -15px;
+  animation-delay: .2s;
+}
+
+.arrow-down span:nth-child(3){
+	top: 0;
+	left: 0;
+  animation-delay: .4s;
+}
+
+.arrow-down span:nth-child(4){
+	top: 15px;
+	left: 15px;
+  animation-delay: .6s;
+}
+
+.arrow-down span:nth-child(5){
+	top: 30px;
+	left: 30px;
+  animation-delay: .8s;
+}
+
+@keyframes arrow-down{
+	0%{
+		border-color: #fff;
+    transform: translate(0,0);
+	}
+  20%{
+		border-color: #fff;
+    transform: translate(15px,15px);
+	}
+	20.1%, 100%{
+		border-color: #222;
+	}
 }
 
 .infoMJ{
@@ -57,6 +175,28 @@ li #lj1 {
     margin: 0 auto;
     position: relative;
 }
+.contentMJ{
+	font-size: 70px;
+	background: -webkit-linear-gradient(white,red);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: tomato;  
+	opacity:0;
+	text-align:left;
+	opacity:0;
+	-webkit-transition:opacity 0.8s ease 0.5s;
+	transition:opacity 0.8s ease 0.5s;
+	top:30px;
+	position: absolute;
+	width:65%;
+	margin:auto;
+	left:0;
+	right:0;
+	
+}
+.infoMJ .contentMJ.moved {
+	opacity:1;
+}
 .infoLJ{
     width: 100%;
     background-image: url('../images/lebron_fondo.png');
@@ -64,3 +204,4 @@ li #lj1 {
     margin: 0 auto;
     position: relative;
 }
+
