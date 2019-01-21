@@ -5,7 +5,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/estilo.css" type="text/css">
+        <script src = "lib/d3.js"></script>
+        <script src = "lib/crossfilter.js"></script>
         <script src="lib/dc.min.js"></script>
+        
+     
 
     </head>
 
@@ -13,7 +17,7 @@
         <div class="row section mainBG">
             <ul id="scene">
                 <li id="mj1" class="layer" data-depth="-0.50"><img class="imgStart" src="images/jordan_solo.jpg" ></li>
-                <li id="lj1" class="layer" data-depth="-0.50"><img class="imgStart" src="images/lebron_solo.png" ></li>
+                <li id="lj1" class="layer" data-depth="+0.50"><img class="imgStart" src="images/lebron_solo.png" ></li>
             </ul>
             <div class="opening-title">
                     <p class="big">The</p>
@@ -25,6 +29,7 @@
         <div class="row section infoMJ">
             <div class="contentMJ">
                 <p>michael</p>
+                <div id="pie"></div>
             </div>
         </div>
 
@@ -39,6 +44,7 @@
             var scene = document.getElementById('scene');
             var parallaxInstance = new Parallax(scene);
         </script>
+        <script src="js/chartJordan.js"></script>
         <script src="js/controller-scrollify.js"></script>
         <script src="js/jquery.scrollify.js"></script>
     </body>
