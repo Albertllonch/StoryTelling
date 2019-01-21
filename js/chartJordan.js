@@ -1,6 +1,9 @@
-var pieChart = dc.lineChart('#pie');
+console.log("Hola")
+if ($('div').hasClass('.contentMJ')){
+    console.log("Holi");
+    var barChart = dc.barChart('#pie');
 
-d3.csv("data/jordan_career.csv", function(errors,people){
+    d3.csv("data/jordan_career.csv", function(errors,people){
 
     var mycrossfilter = crossfilter(people);
 
@@ -9,8 +12,8 @@ d3.csv("data/jordan_career.csv", function(errors,people){
        return data.pts;
     });
     var pts = ptsDimension.group().reduceCount();
-
-    pieChart
+    console.log("Hola")
+    barChart
         .width(800)
         .height(300)
         .x(d3.scaleLinear().domain([15,70]))
@@ -27,4 +30,5 @@ d3.csv("data/jordan_career.csv", function(errors,people){
 
     dc.renderAll();
 })
+}
 

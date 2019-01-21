@@ -170,7 +170,8 @@ a:visited {
 
 .infoMJ{
     width: 100%;
-    background-image: url('../images/jordan_utah.jpg');
+    background-color: wheat;
+    /*background-image: url('../images/jordan_utah.jpg');*/
     background-size: cover;
     margin: 0 auto;
     position: relative;
