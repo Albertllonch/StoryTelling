@@ -10,6 +10,7 @@ $(function(){
 			}
 			if(ref==="infoMJ") {
 				$(".infoMJ .contentMJ").addClass("moved");
+				$(".infoMJ .contentMJ .popup #ball").removeClass("ballhidden");
 			}
 			if(ref==="infoLJ") {
 				$(".infoMJ .contentMJ").removeClass("moved");

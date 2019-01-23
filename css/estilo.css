@@ -170,8 +170,8 @@ a:visited {
 
 .infoMJ{
     width: 100%;
-    background-color: wheat;
-    /*background-image: url('../images/jordan_utah.jpg');*/
+    /*background-color: wheat;*/
+    background-image: url('../images/jordan_utah.jpg');
     background-size: cover;
     margin: 0 auto;
     position: relative;
@@ -198,11 +198,73 @@ a:visited {
 .infoMJ .contentMJ.moved {
 	opacity:1;
 }
-.infoLJ{
+
+/* Popup MJ container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #ball{
+      height: 250px !important;
+  }
+
+  .ballhidden{
+      display:none !important;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 1000px;
+    height: 500px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    /*bottom: 125%;
+    left: 50%;
+    margin-left: -80px;*/
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  .infoLJ{
     width: 100%;
     background-image: url('../images/lebron_fondo.png');
     background-size: cover;
     margin: 0 auto;
     position: relative;
 }
-
