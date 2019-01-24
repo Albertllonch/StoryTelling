@@ -36,11 +36,73 @@
             </div>
 			
         </div>
+
+        <div class="row section bothHistory" data-section-name="bothHistory">
+            <header class="mast__header">
+                <h1 class="mast__title js-spanize">Michael Jordan</h1> 
+                <hr class="sep"/>
+                <p class="mast__text js-spanize">
+                Estadísticas de una leyenda.
+                </p>  
+
+                <div class="containergrid">
+                    <div class="box">
+                        <svg id="animated1" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="#E5111F"/>
+                            <path id="progress1" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"
+                                    d="M50 10
+                                        a 40 40 0 0 1 0 80
+                                        a 40 40 0 0 1 0 -80">
+                            </path>
+                            <text id="count1" x="50" y="50" text-anchor="middle" dy="7" font-size="20">45%</text>                               
+                        </svg>
+                    </div>
+
+                    <div class="box">
+                        
+                        <svg id="animated2" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="#E5111F"/>
+                            <path id="progress2" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"
+                                    d="M50 10
+                                        a 40 40 0 0 1 0 80
+                                        a 40 40 0 0 1 0 -80">
+                            </path>
+                            <text id="count2" x="50" y="50" text-anchor="middle" dy="7" font-size="20">68%</text>                               
+                        </svg>
+                    </div>
+
+                    <div class="box">
+                        <svg id="animated3" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="#E5111F"/>
+                            <path id="progress3" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"
+                                    d="M50 10
+                                        a 40 40 0 0 1 0 80
+                                        a 40 40 0 0 1 0 -80">
+                            </path>
+                            <text id="count3" x="50" y="50" text-anchor="middle" dy="7" font-size="20">87%</text>                               
+                        </svg>
+                    </div>
+
+                    <div class="box">
+                        <svg id="animated4" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="45" fill="#E5111F"/>
+                            <path id="progress4" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"
+                                    d="M50 10
+                                        a 40 40 0 0 1 0 80
+                                        a 40 40 0 0 1 0 -80">
+                            </path>
+                            <text id="count4" x="50" y="50" text-anchor="middle" dy="7" font-size="20">100%</text>                               
+                        </svg>
+                    </div>
+
+                </div>
+
+            </header>
+            
+        </div>
         
         <div class="row section infoMJ" data-section-name="infoMJ">
             <div id="prueba" class="contentMJ">
-                <p>michael</p>
-                
                 <div id="pie">
                     <div class="popup" onclick="disball();myMJChart();"><img id="ball" style="cursor: pointer;" src="images/ball2.png">
                         <span class="popuptext" id="myPopup"></span>
@@ -63,7 +125,8 @@
         </script>
         <script src="js/controller-scrollify.js"></script>
         <script src="js/jquery.scrollify.js"></script>
-
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
+        <script  src="js/MJAnimation.js"></script>
     </body>
 
 </html>

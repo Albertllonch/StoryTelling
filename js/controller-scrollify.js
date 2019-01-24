@@ -8,9 +8,12 @@ $(function(){
 				$(".infoMJ .contentMJ").removeClass("moved");
 				
 			}
+			if(ref ==="bothHistory"){
+				
+			}
 			if(ref==="infoMJ") {
 				$(".infoMJ .contentMJ").addClass("moved");
-				$(".infoMJ .contentMJ .popup #ball").removeClass("ballhidden");
+				$(".infoMJ .contentMJ .popup #ball").removeClass("ballhidden");				
 			}
 			if(ref==="infoLJ") {
 				$(".infoMJ .contentMJ").removeClass("moved");
