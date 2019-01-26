@@ -130,27 +130,23 @@
         </div>
 
         <div class="row section choose" data-section-name="choose">
-            <div class="contentChoose">
-                <div class="MJFace">
-                    <img src="images/jordan_solo.jpg">
-                </div>>
-                <div id="textochoose">
-                    Choose 
-                    <div id=flip>
-                        <div><div>the best</div></div>
-                        <div><div>the real</div></div>
-                        <div><div>the right</div></div>
-                    </div>
-                    king!
+            <ul id="contentChoose">
+                <li id="MJFace" class="layer" data-depth="-0.50"><img class="imgChoose" id="pic" src="images/jordan_solo_preking.png" onclick="changeImage()"></li>
+                <li id="LJFace" class="layer" data-depth="+0.50"><img class="imgChoose" id="pic2" src="images/lebron_solo_preking.png" onclick="changeImage2()"></li>
+            </ul>
+            <div id="textochoose">
+                Choose 
+                <div id=flip>
+                    <div><div>the best</div></div>
+                    <div><div>the real</div></div>
+                    <div><div>the right</div></div>
                 </div>
-                <div class="LBFace">
-                    <img src="images/lebron_solo.png">
-                </div>>  
+                <span class="kingbig">king!</span>
             </div>
-
+			
         </div>
     
-       
+        <script src="js/ChoosePlayer.js"></script>
         <script src="js/chartJordan.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="lib/parallax.js"></script>
