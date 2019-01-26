@@ -1232,27 +1232,25 @@ a:visited {
 }
 
 /* QUINTA SECCION */
-.MJFace img{
-  height:600px;
-  position: static;
-  float: left;
-}
 
 
 #textochoose {
   color:#999;
+  font-family: 'Canela Web';
   text-transform: uppercase;
   font-size:36px;
   font-weight:bold;
   padding-top:200px;  
-  position: static;
+  position: absolute;
   width:100%;
-  bottom:45%;
   display:block;
   text-align: center;
-  float: initial;
+  margin: 0 auto;
 }
-
+    
+.kingbig{
+  font-size: 90px;
+}
 #flip {
   height:50px;
   overflow:hidden;
@@ -1288,4 +1286,82 @@ a:visited {
   float:right;
   height:600px;
 }
+
+.MJFace img{
+  height:600px;
+  position: static;
+  float: left;
+}
+
   
+li #LJFace{
+  margin-left: 70%;
+
+}
+li #MJFace {
+  margin-left: 300%;
+}
+.imgChoose{
+  height: 600px;
+  margin-left: 70%;
+  margin-top: 20%;
+  transform:scale(1);
+  -webkit-transform:scale(1);
+  -ms-transition: all 500ms ease-in-out;
+
+}
+#pic{
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#pic2{
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#LJFace .imgChoose {
+  margin-left:350%;  
+  margin-top: -220%;
+  
+}
+#LJFace .imgChoose:hover {
+  transform:scale(1.1);
+  /*animation: fadeOutMJ 1s
+  border: 1px solid black;
+  background: linear-gradient(grey, black);*/
+}
+
+#MJFace .imgChoose:hover {
+  transform:scale(1.1);
+  /*animation: fadeOutLJ 1s
+  border: 1px solid black;
+  background: linear-gradient(grey, black);*/
+}
+
+
+@-webkit-keyframes fadeOutMJ {
+  from {opacity: 1;} 
+  to {opacity: 0;}
+}
+
+@keyframes fadeOutMJ {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@-webkit-keyframes fadeOutLJ {
+  from {opacity: 1;} 
+  to {opacity: 0;}
+}
+
+@keyframes fadeOutLJ {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
