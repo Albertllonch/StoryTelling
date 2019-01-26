@@ -1,3 +1,4 @@
+
 $(function(){
     $.scrollify({
         section : '.section',
@@ -13,7 +14,8 @@ $(function(){
 			}
 			if(ref==="infoMJ") {
 				$(".infoMJ .contentMJ").addClass("moved");
-				$(".infoMJ .contentMJ .popup #ball").removeClass("ballhidden");				
+				$(".infoMJ .contentMJ .popup #ball").removeClass("ballhidden");
+				cargarGraficaYears();			
 			}
 			if(ref==="infoLJ") {
 				$(".infoMJ .contentMJ").removeClass("moved");
