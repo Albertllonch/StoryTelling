@@ -5,11 +5,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/estilo.css" type="text/css">
-        <script src = "lib/d3.js"></script>
-        <script src = "lib/crossfilter.js"></script>
+        <script src ="lib/d3.js"></script>
+        <script src ="lib/crossfilter.js"></script>
         <script src="lib/dc.min.js"></script>
-        
-     
+        <link rel="stylesheet" href="css/estiloMJ.css" type="text/css">
+
 
     </head>
 
@@ -36,7 +36,27 @@
             </div>
 			
         </div>
+        <div class="row section infoMJ" data-section-name="infoMJ">
+            <div id="prueba" class="contentMJ">
+                <div class="box-story typewriter">
+                    <p>Roma no se construyó en un día, al igual que la leyenda de estos dos gran jugadores.
+                        <br>Dos épocas separan a estos dos reyes, pero el debate a día de hoy, aún está servido. 
+                        <br><br>¿Quién es mejor: Michael Jordan o Lebron James?</p>
+                </div>
+                <!--
+                <div id="pie">
+                    <div class="popup" onclick="disball();myMJChart();">
+                        <img id="ball" style="cursor: pointer;" src="images/ball2.png">
+                        <span class="popuptext" id="myPopup"></span>
+                    </div>
+                </div>-->
+            </div>
+            <div class="inicioDerecha">
+                <div id="chartYears">
 
+                </div>
+            </div>
+        </div>
         <div class="row section bothHistory" data-section-name="bothHistory">
             <header class="mast__header">
                 <h1 class="mast__title js-spanize">Michael Jordan</h1> 
@@ -101,15 +121,7 @@
             
         </div>
         
-        <div class="row section infoMJ" data-section-name="infoMJ">
-            <div id="prueba" class="contentMJ">
-                <div id="pie">
-                    <div class="popup" onclick="disball();myMJChart();"><img id="ball" style="cursor: pointer;" src="images/ball2.png">
-                        <span class="popuptext" id="myPopup"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
         
         <div class="row section infoLJ" data-section-name="infoLJ">>
@@ -138,7 +150,7 @@
 
         </div>
     
-
+       
         <script src="js/chartJordan.js"></script>
         <script src="js/jquery-3.3.1.min.js"></script>
         <script src="lib/parallax.js"></script>
@@ -149,7 +161,8 @@
         <script src="js/controller-scrollify.js"></script>
         <script src="js/jquery.scrollify.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
-        <script  src="js/MJAnimation.js"></script>
+        <script src="js/MJAnimation.js"></script>
+        <script src="js/graficaYears.js"></script>
     </body>
 
 </html>

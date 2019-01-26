@@ -1138,20 +1138,13 @@ a:visited {
     position: relative;
 }
 .contentMJ{
-	font-size: 70px;
-	background: -webkit-linear-gradient(white,red);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: tomato;  
 	opacity:0;
 	text-align:left;
-	opacity:0;
 	-webkit-transition:opacity 0.8s ease 0.5s;
 	transition:opacity 0.8s ease 0.5s;
 	top:30px;
 	position: absolute;
 	width:65%;
-	margin:auto;
 	left:0;
 	right:0;
 	

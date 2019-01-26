@@ -1,0 +1,17 @@
+.box-story{
+    height: 80%;
+    width: 40%;
+    display: block;
+    background-color:rgba(0, 0, 0, 80%);
+    margin: 10%;
+    font-size: 18px;
+    padding: 4%;
+    color: white;
+    border-radius: 5%;
+}
+
+.inicioDerecha{
+    width: 35%;
+    display:block;
+    margin-left: 65%;
+}
