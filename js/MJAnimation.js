@@ -2,6 +2,7 @@
 Spanizer
 - Wraps letters with spans, for css animations
 -----*/
+function cargarMJAni(){
 (function($) {
   var s,
   spanizeLetters = {
@@ -96,3 +97,5 @@ progress4.attr({strokeDasharray: '0, 251.2'});
 Snap.animate(0,251.2, function( value ) {
     progress4.attr({ 'stroke-dasharray':value+',251.2'});
 }, 2000);
+
+}
