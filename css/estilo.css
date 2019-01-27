@@ -13,8 +13,8 @@ body{
     background-size: cover;
     margin: 0 auto;
     position: relative;
-	animation: shake 0.5s;
-	animation-delay: 2s;
+    animation: shake 0.5s;
+    animation-delay: 2s;
 }
 
 @keyframes shake {
@@ -1233,13 +1233,13 @@ a:visited {
   font-family: 'Canela Web';
   text-transform: uppercase;
   font-size:36px;
-  font-weight:bold;
-  padding-top:200px;  
+  font-weight:bold; 
   position: absolute;
-  width:100%;
+  width:20%;
+  margin-left: 42%;
+  margin-top: 10%;
   display:block;
   text-align: center;
-  margin: 0 auto;
 }
     
 .kingbig{
@@ -1325,14 +1325,14 @@ li #MJFace {
   margin-top: -220%;
   
 }
-#LJFace .imgChoose:hover {
+.imgChoose:hover {
   transform:scale(1.1);
   /*animation: fadeOutMJ 1s
   border: 1px solid black;
   background: linear-gradient(grey, black);*/
 }
 
-#MJFace .imgChoose:hover {
+.imgChoose:hover {
   transform:scale(1.1);
   /*animation: fadeOutLJ 1s
   border: 1px solid black;
