@@ -25,9 +25,9 @@
 
 .box-story2{
     margin: 1%;
-    height: 50%;
+    height: 45%;
     width: 25%;
-    background-color:rgba(255, 255, 255, 0.8);
+    background-color:rgba(102, 101, 101, 0.534);
     font-size: 18px;
     padding: 4%;
     color: white;
@@ -36,4 +36,9 @@
 #chart-years{
     float: left;
     margin-left: 50%;
+}
+
+#chart-row-team{
+    opacity: .5;
+    width: 50%;
 }

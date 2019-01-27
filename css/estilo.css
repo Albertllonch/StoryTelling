@@ -250,10 +250,11 @@ a:visited {
 }
 .mast__title {
   font-family: "Cutive Mono", monospace;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 600;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  margin-top:-5%;
 }
 .mast__title span{
   -webkit-animation: letter-glow 0.7s 0s ease both;
@@ -1151,6 +1152,63 @@ a:visited {
 	right:0;
 }
 
+.containerbutton {
+  margin-right: 15%;
+  margin-top:10%;
+}
+
+.pulse-button {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  font-size: 1.3em;
+  font-weight: light;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100px;
+  letter-spacing: -1px;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  background: #5a99d4;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(90, 153, 212, 0.5);
+  -webkit-animation: pulse 1.5s infinite;
+}
+
+.pulse-button:hover {
+  -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  70% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+  }
+  100% {
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+  }
+}
+
 .infoMJ .contentMJ.moved {
 	opacity:1;
 }
@@ -1279,9 +1337,95 @@ a:visited {
 */
 #chart-years{
   position: relative;
-  margin-top: -20%;
+  margin-top: -15%;
  margin-left: 50%;
 }
+
+#leyenda{
+
+}
+
+.loading {
+  text-transform: uppercase;
+  font-family: 'Cabin Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 80pt;
+  text-align: center;
+  height: 120px;
+  line-height: 110px;
+  vertical-align: bottom;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100px;
+  bottom: 0;
+  display: block;
+  margin-left: 15%;
+  margin-top: -3%;
+}
+
+.loading-2 {
+  top: 300px;
+  width: 473px;
+  height: 97px;
+  font-size: 0;
+  background: rgba(255, 255, 255, 0.06);
+  margin: 0 auto;
+}
+
+.ff {
+  position: absolute;
+  font-size: 12pt;
+  top: -20px;
+  color: white;
+  line-height: 12pt;
+}
+
+.loading-2-text {
+  background-image: url("http://i66.tinypic.com/1jxje9.png");
+  width: 473px;
+  height: 97px;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0 bottom;
+  }
+  100% {
+    background-position: 200px bottom;
+  }
+}
+@keyframes loading-animation {
+  0% {
+    background-size: 200px 0px;
+  }
+  100% {
+    background-size: 200px 200px;
+  }
+}
+.wave {
+  background-image: url("http://i66.tinypic.com/optxd3.png");
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+  animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+  background-size: 200px 100px;
+  background-repeat: repeat-x;
+  opacity: 1;
+}
+
+.wave-2 {
+  -moz-background-clip: initial;
+  -o-background-clip: initial;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  display: inline-block;
+}
+
 
 /* QUINTA SECCION */
 

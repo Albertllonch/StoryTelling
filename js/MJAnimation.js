@@ -37,9 +37,9 @@ $({ Counter: 0 }).animate({ Counter: count1.text() }, {
 var s1 = Snap('#animated1');
 var progress1 = s1.select('#progress1');
 
-progress1.attr({strokeDasharray: '0, 113'});
+progress1.attr({strokeDasharray: '0, 123'});
 
-Snap.animate(0,113, function( value ) {
+Snap.animate(0,123, function( value ) {
     progress1.attr({ 'stroke-dasharray':value+',251.2'});
 }, 2000);
 
@@ -49,16 +49,16 @@ $({ Counter: 0 }).animate({ Counter: count2.text() }, {
   duration: 2000,
   easing: 'linear',
   step: function () {
-    count2.text(Math.ceil(this.Counter)+ "%");
+    count2.text(Math.ceil(this.Counter));
   }
 });
 
 var s2 = Snap('#animated2');
 var progress2 = s2.select('#progress2');
 
-progress2.attr({strokeDasharray: '0, 170.8'});
+progress2.attr({strokeDasharray: '0, 180.8'});
 
-Snap.animate(0,170.8, function( value ) {
+Snap.animate(0,180.8, function( value ) {
     progress2.attr({ 'stroke-dasharray':value+',251.2'});
 }, 2000);
 /*animacion 3 */
@@ -74,9 +74,9 @@ $({ Counter: 0 }).animate({ Counter: count3.text() }, {
 var s3 = Snap('#animated3');
 var progress3 = s3.select('#progress3');
 
-progress3.attr({strokeDasharray: '0, 218.5'});
+progress3.attr({strokeDasharray: '0, 208.5'});
 
-Snap.animate(0,218.5, function( value ) {
+Snap.animate(0,208.5, function( value ) {
     progress3.attr({ 'stroke-dasharray':value+',251.2'});
 }, 2000);
 /*animacion 4 */
@@ -92,9 +92,9 @@ $({ Counter: 0 }).animate({ Counter: count4.text() }, {
 var s4 = Snap('#animated4');
 var progress4 = s4.select('#progress4');
 
-progress4.attr({strokeDasharray: '0, 251.2'});
+progress4.attr({strokeDasharray: '0, 80.4'});
 
-Snap.animate(0,251.2, function( value ) {
+Snap.animate(0,80.4, function( value ) {
     progress4.attr({ 'stroke-dasharray':value+',251.2'});
 }, 2000);
 

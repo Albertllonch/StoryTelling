@@ -9,7 +9,7 @@ $(function(){
 			}
 			if(ref ==="bothHistory"){
 				$(".mast__title").text("Michael Jordan");
-				$(".mast__text").text("Estadísticas de una leyenda.");
+				$(".mast__text").text("Después de 1072 partidos y más de 41 mil minutos jugados, estas son las estadísticas de una leyenda:");
 				cargarMJAni();
 			}
 			if(ref==="infoMJ") {

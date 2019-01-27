@@ -39,8 +39,8 @@
         <div class="row section infoMJ" data-section-name="infoMJ">
             <div id="prueba" class="contentMJ">
                 <div class="box-story typewriter">
-                    <p>Roma no se construyó en un día, al igual que la leyenda de estos dos gran jugadores.
-                        <br>Dos épocas separan a estos dos reyes, pero el debate a día de hoy, aún está servido. 
+                    <p>Roma no se construyó en un día, al igual que la leyenda de estos dos grandes jugadores.
+                        <br>Dos épocas separan a estos dos reyes del baloncesto, pero el debate a día de hoy, aún está servido. 
                         <br><br>¿Quién es mejor: Michael Jordan o Lebron James?</p>
                 </div>
                 <!--
@@ -53,8 +53,10 @@
             </div>
             <div class="inicioDerecha">
                 <h1 class="leyenda-chart">Partidos jugados por años</h1>
-                <div id="chartYears">
-
+                <div id="chartYears">                
+                </div>
+                <div class='containerbutton'>
+                    <span class='pulse-button' onclick="cargarGrafica();">Lebron</span>
                 </div>
             </div>
         </div>
@@ -76,12 +78,12 @@
                                         a 40 40 0 0 1 0 80
                                         a 40 40 0 0 1 0 -80">
                             </path>
-                            <text id="count1" x="50" y="50" text-anchor="middle" dy="7" font-size="20">45%</text>                               
+                            <text id="count1" x="50" y="50" text-anchor="middle" dy="7" font-size="20">49%</text>                               
                         </svg>
                     </div>
 
                     <div class="box">
-                    <p>% Partidos ganados</p>
+                    <p>Media partidos jugado al año</p>
                         <svg id="animated2" viewbox="0 0 100 100">
                             <circle cx="50" cy="50" r="45" fill="#E5111F"/>
                             <path id="progress2" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"
@@ -89,12 +91,12 @@
                                         a 40 40 0 0 1 0 80
                                         a 40 40 0 0 1 0 -80">
                             </path>
-                            <text id="count2" x="50" y="50" text-anchor="middle" dy="7" font-size="20">68%</text>                               
+                            <text id="count2" x="50" y="50" text-anchor="middle" dy="7" font-size="20">72</text>                               
                         </svg>
                     </div>
 
                     <div class="box">
-                        <p>% Tapones</p>
+                        <p>% Tiros libres</p>
                         <svg id="animated3" viewbox="0 0 100 100">
                             <circle cx="50" cy="50" r="45" fill="#E5111F"/>
                             <path id="progress3" stroke-linecap="round" stroke-width="5" stroke="#fff" fill="none"
@@ -102,7 +104,7 @@
                                         a 40 40 0 0 1 0 80
                                         a 40 40 0 0 1 0 -80">
                             </path>
-                            <text id="count3" x="50" y="50" text-anchor="middle" dy="7" font-size="20">87%</text>                               
+                            <text id="count3" x="50" y="50" text-anchor="middle" dy="7" font-size="20">83%</text>                               
                         </svg>
                     </div>
 
@@ -115,7 +117,7 @@
                                         a 40 40 0 0 1 0 80
                                         a 40 40 0 0 1 0 -80">
                             </path>
-                            <text id="count4" x="50" y="50" text-anchor="middle" dy="7" font-size="20">100%</text>                               
+                            <text id="count4" x="50" y="50" text-anchor="middle" dy="7" font-size="20">32%</text>                               
                         </svg>
                     </div>
 
@@ -127,14 +129,15 @@
 
         <div class="row section infoLJ" data-section-name="infoLJ">>
             <div class="contentLJ">
+                <div class="loading wave">Lebron James</div>
                 <div id="storyLJ" class="box-story2">
-                        <p>Roma no se construyó en un día, al igual que la leyenda de estos dos gran jugadores.
-                            <br>Dos épocas separan a estos dos reyes, pero el debate a día de hoy, aún está servido. 
-                            <br><br>¿Quién es mejor: Michael Jordan o Lebron James?</p>
-                </div>
+                        <p>Lebron, aún en activo, intenta superar todas las estadísticas del legendario Michael Jordan.
+                            <br>En la gráfica redonda, podemos apreciar la cantidad de partidos jugados en cada año, mientras que en la de filas se pueden ver los puntos anotados. 
+                            <br><br>¿Hasta cuándo podrá mejorar sus números?</p>
+                </div><span style="color:white;">Partidos jugados/año</span>
                 <div id="chart-years"></div>
                 <div id="chart-stats"></div>
-                <div id="chart-row-team"></div>
+                <div id="chart-row-team"><span style="color:white;">Puntos anotados por partido/año</span></div>
             </div>
         </div>
 
