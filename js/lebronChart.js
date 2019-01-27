@@ -4,7 +4,6 @@ function lebronCharts(){
         statsChart = dc.barChart("#chart-stats"),
         equiposRowChart = dc.rowChart("#chart-row-team");
 
-    var table = dc.dataTable('#table');
 
     d3.csv('data/lebron_career.csv').then(function(lebron){
 
@@ -16,9 +15,10 @@ function lebronCharts(){
         statsDim = crossfilterLebron.dimension(function(d) {return d.pts;}),
         equiposDim  = crossfilterLebron.dimension(function(d) {return d.team;});
         years = yearDim.group(),
-        team = equiposDim.group().reduceSum(function(d) {return +d.team;}),
+        team = equiposDim.group().reduceCount(),
         statsGroup  =  statsDim.group().reduceCount();
 
+        console.log(team.all())
         yearChart
             .width(300)
             .height(300)
@@ -26,10 +26,12 @@ function lebronCharts(){
             .group(years)
             .innerRadius(50)
             .controlsUseVisibility(true);
-/*
+
         statsChart
+            .width(600)
             .dimension(statsDim)
             .group(statsGroup)
+            .x(d3.scaleLinear().domain([0,70]))
             .elasticY(true)
             .controlsUseVisibility(true);
 
@@ -37,10 +39,12 @@ function lebronCharts(){
             .dimension(equiposDim)
             .group(team)
             .elasticX(true)
-            .controlsUseVisibility(true);*/
+            .controlsUseVisibility(true);
         
+            
         yearChart.render();
-        console.log('rendered');
+        statsChart.render();
+        equiposRowChart.render();
    });
    
    
