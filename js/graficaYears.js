@@ -1,6 +1,6 @@
 
 function cargarGraficaYears(){
-    console.log('dentro');
+
     var chart = dc.rowChart('#chartYears');
 
     d3.csv('data/jordan_career.csv').then(function(jordan){  
@@ -16,14 +16,16 @@ function cargarGraficaYears(){
         chart
             .width(400)
             .height(500)
+            .ordinalColors(['white'])
             .dimension(dateDimension)
             .group(groupByYear)
             .ordering(function(d){return d.key;})
             .on('renderlet', function(chart) {
                 chart.selectAll('rect').on('click', function(d) {
-                    console.log('click!', d);
-                });
+                    chart.select('rect').text(d.value);
+                })
             });
+            
         chart.render();
     });
 

@@ -113,6 +113,7 @@ $(function(){
 			}
 			if(ref==="infoLJ") {
 				$(".infoMJ .contentMJ").removeClass("moved");
+				lebronCharts();
 			}
 				
 				
