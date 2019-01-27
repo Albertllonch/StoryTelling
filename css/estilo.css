@@ -1149,7 +1149,6 @@ a:visited {
 	width:65%;
 	left:0;
 	right:0;
-	
 }
 
 .infoMJ .contentMJ.moved {
@@ -1228,7 +1227,7 @@ a:visited {
 }
 
 
-#storyLJ {
+/*#storyLJ {
   width: 30vw;
   height: 30vw;
   line-height: 30vw;
@@ -1277,10 +1276,10 @@ a:visited {
     color: #7e0fff;
   }
 }
-
+*/
 #chart-years{
   position: relative;
-  margin-top: -50%;
+  margin-top: -20%;
  margin-left: 50%;
 }
 
@@ -1295,7 +1294,7 @@ a:visited {
   font-weight:bold; 
   position: absolute;
   width:20%;
-  margin-left: 42%;
+  margin-left: 39%;
   margin-top: 10%;
   display:block;
   text-align: center;
